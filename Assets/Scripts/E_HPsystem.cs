@@ -20,7 +20,7 @@ public class E_HPsystem : MonoBehaviour
     {
         now_HP = Damage_chance(now_HP); //now_HPを更新
         float h = now_HP/HPlimit;
-        HPGauge.value = Mathf.Lerp(0f, 1f, h); //開始（1）,終わり（0）,0~1
+        HPGauge.value = Mathf.Lerp(0f, 1f, h); //開始（0）,終わり（1）,h=1だと終わりの値、h=0だと初めの値
     }
 
     float Damage_chance(float now_HP)
